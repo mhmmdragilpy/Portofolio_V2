@@ -1,0 +1,5 @@
+LinkedIn = https://www.linkedin.com/in/muhmmdragilpy/
+Instagram = https://www.instagram.com/mhmmdragilpy/
+Youtube = https://www.youtube.com/@mhmmdragilpy
+Github = https://github.com/mhmmdragilpy
+Tiktok = https://www.tiktok.com/@mhmmdragilpy

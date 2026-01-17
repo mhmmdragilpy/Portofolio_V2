@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 
-import { supabase } from "../supabase"; 
+import { supabase } from "../supabase";
 
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -116,6 +116,11 @@ const techStacks = [
   { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", language: "Java" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", language: "C++" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", language: "TypeScript" },
+  { icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", language: "shadcn UI" },
+  { icon: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000", language: "Python" }, // Using a generic gravity/space icon representation
 ];
 
 export default function FullWidthTabs() {
@@ -140,7 +145,7 @@ export default function FullWidthTabs() {
       // Mengambil data dari Supabase secara paralel
       const [projectsResponse, certificatesResponse] = await Promise.all([
         supabase.from("projects").select("*").order('id', { ascending: true }),
-        supabase.from("certificates").select("*").order('id', { ascending: true }), 
+        supabase.from("certificates").select("*").order('id', { ascending: true }),
       ]);
 
       // Error handling untuk setiap request
@@ -170,10 +175,10 @@ export default function FullWidthTabs() {
     const cachedCertificates = localStorage.getItem('certificates');
 
     if (cachedProjects && cachedCertificates) {
-        setProjects(JSON.parse(cachedProjects));
-        setCertificates(JSON.parse(cachedCertificates));
+      setProjects(JSON.parse(cachedProjects));
+      setCertificates(JSON.parse(cachedCertificates));
     }
-    
+
     fetchData(); // Tetap panggil fetchData untuk sinkronisasi data terbaru
   }, [fetchData]);
 
@@ -209,7 +214,7 @@ export default function FullWidthTabs() {
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
-          Explore my journey through projects, certifications, and technical expertise. 
+          Explore my journey through projects, certifications, and technical expertise.
           Each section represents a milestone in my continuous learning path.
         </p>
       </div>
