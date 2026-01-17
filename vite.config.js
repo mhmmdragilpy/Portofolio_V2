@@ -9,4 +9,7 @@ export default defineConfig({
       '@babel/runtime/helpers/builtin': '@babel/runtime/helpers',
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1600, // Increases the warning limit to 1.6MB to silence false alarms
+  },
 })
