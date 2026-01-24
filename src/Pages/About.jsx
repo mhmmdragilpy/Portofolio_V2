@@ -21,7 +21,7 @@ const Header = memo(() => (
       data-aos-duration="800"
     >
       <Sparkles className="w-5 h-5 text-purple-400" />
-      Transforming ideas into digital experiences
+      Exploring technology through continuous learning
       <Sparkles className="w-5 h-5 text-purple-400" />
     </p>
   </div>
@@ -161,7 +161,7 @@ const AboutPage = () => {
       color: "from-[#6366f1] to-[#a855f7]",
       value: totalProjects,
       label: "Total Projects",
-      description: "Innovative web solutions crafted",
+      description: "Personal projects completed",
       animation: "fade-right",
     },
     {
@@ -169,7 +169,7 @@ const AboutPage = () => {
       color: "from-[#a855f7] to-[#6366f1]",
       value: totalCertificates,
       label: "Certificates",
-      description: "Professional skills validated",
+      description: "Learning achievements collected",
       animation: "fade-up",
     },
     {
@@ -177,7 +177,7 @@ const AboutPage = () => {
       color: "from-[#6366f1] to-[#a855f7]",
       value: YearExperience,
       label: "Years of Experience",
-      description: "Continuous learning journey",
+      description: "Growing through exploration",
       animation: "fade-left",
     },
   ], [totalProjects, totalCertificates, YearExperience]);
@@ -205,7 +205,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Muhammad Ragil
+                Mang Do-san
               </span>
             </h2>
 
@@ -214,7 +214,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya adalah mahasiswa S1 Informatika yang antusias dalam mengembangkan keterampilan di dunia teknologi, khususnya dalam pengembangan Web3 dan kecerdasan buatan (AI). Memiliki kemampuan dalam pemrograman, jaringan komputer, serta kemampuan untuk beradaptasi dan bekerja dalam tim. Dengan semangat tinggi untuk terus belajar, saya berfokus pada penerapan teknologi terkini untuk menciptakan solusi inovatif.
+              Saya adalah mahasiswa S1 Informatika yang memiliki ketertarikan tinggi di dunia teknologi. Saat ini sedang aktif belajar dan mengeksplorasi berbagai bidang seperti Web Development, Artificial Intelligence, dan Cyber Security. Saya percaya bahwa proses belajar adalah perjalanan tanpa akhir, dan saya selalu antusias untuk mengembangkan skill baru melalui proyek-proyek dan pembelajaran mandiri.
             </p>
 
             {/* Quote Section */}

@@ -1,0 +1,33 @@
+{
+    "title": "Academy Space",
+    "description": "Platform manajemen reservasi fasilitas kampus yang modern dan terintegrasi, memungkinkan peminjaman ruangan secara transparan dengan fitur pengecekan ketersediaan real-time.",
+    "breadcrumb": "Projects > Academy Space",
+    "metrics": {
+        "tech_count": 10,
+        "feature_count": 6
+    },
+    "links": {
+        "demo": "https://academy-space.vercel.app/",
+        "repo": "https://github.com/mhmmdragilpy/AcademySpace"
+    },
+    "technologies": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "TailwindCSS 4",
+        "PostgreSQL",
+        "Express.js",
+        "TanStack Query",
+        "Zustand",
+        "Redis",
+        "NextAuth.js"
+    ],
+    "features": [
+        "Smart Availability Check (Real-time Conflict Detection)",
+        "Secure Authentication (JWT & NextAuth)",
+        "Interactive Booking Calendar",
+        "Comprehensive Admin Dashboard",
+        "Automated Reservation Approval Flow",
+        "Facility Rating & Feedback System"
+    ]
+}

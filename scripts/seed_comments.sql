@@ -6,7 +6,7 @@ TRUNCATE TABLE portfolio_comments RESTART IDENTITY;
 
 -- 2. Insert Pinned Comment (Admin)
 INSERT INTO portfolio_comments (user_name, content, is_pinned, created_at, profile_image) VALUES
-('Rajail Dev', 'Thanks for visiting! Contact me if you need anything', true, NOW(), NULL);
+('Mang Do-san', 'Thanks for visiting! Contact me if you need anything', true, NOW(), NULL);
 
 -- 3. Insert Regular Comments
 INSERT INTO portfolio_comments (user_name, content, is_pinned, created_at, profile_image) VALUES

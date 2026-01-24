@@ -1,0 +1,28 @@
+{
+    "title": "Whome",
+    "description": "Platform manajemen ISP modern yang memfasilitasi pendaftaran pelanggan baru dan pemantauan status instalasi melalui dashboard admin yang intuitif.",
+    "breadcrumb": "Projects > Whome",
+    "metrics": {
+        "tech_count": 6,
+        "feature_count": 5
+    },
+    "links": {
+        "demo": "https://whome-provider.vercel.app",
+        "github": "https://github.com/mhmmdragilpy/whome.git"
+    },
+    "technologies": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Supabase",
+        "Zustand",
+        "React 19"
+    ],
+    "features": [
+        "Sistem Pendaftaran Pelanggan (Leads) Real-time",
+        "Dashboard Admin Interaktif untuk Manajemen Instalasi",
+        "Pelacakan Lokasi & Validasi Input Otomatis",
+        "Manajemen Paket Layanan Internet Dinamis",
+        "State Management Global yang Teroptimasi"
+    ]
+}

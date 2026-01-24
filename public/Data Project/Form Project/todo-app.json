@@ -1,0 +1,30 @@
+{
+    "title": "Todo App",
+    "description": "Aplikasi manajemen tugas modern yang responsif dan estetik, dirancang untuk meningkatkan produktivitas dengan fitur pelacakan progres real-time dan penyimpanan data lokal yang persisten.",
+    "breadcrumb": "Projects > Todo App",
+    "metrics": {
+        "tech_count": 7,
+        "feature_count": 6
+    },
+    "links": {
+        "demo": "https://todo-app-lovat-sigma.vercel.app/",
+        "repo": "https://github.com/mhmmdragilpy/todo-app"
+    },
+    "technologies": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "Lucide React",
+        "Worker Threads",
+        "Local Storage API"
+    ],
+    "features": [
+        "Manajemen Tugas Full CRUD (Create, Read, Update, Delete)",
+        "Persistensi Data Lokal (Local Storage)",
+        "Sistem Filtering Tugas (Active/Completed)",
+        "Visualisasi Progres Real-time",
+        "Arsitektur Concurrency Worker Pool",
+        "Desain Responsif dengan Efek Glassmorphism"
+    ]
+}

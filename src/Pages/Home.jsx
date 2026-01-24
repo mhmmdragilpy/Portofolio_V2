@@ -12,7 +12,7 @@ const StatusBadge = memo(() => (
       <div className="relative px-3 sm:px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
         <span className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
           <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-blue-400" />
-          Ready to Innovate
+          Passionate Learner
         </span>
       </div>
     </div>
@@ -25,14 +25,14 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Web
+          Tech
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          Developer
+          Enthusiast
         </span>
       </span>
     </h1>
@@ -77,8 +77,8 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web3 Enthusiast", "Network Engineer", "AI & Cyber Security"];
-const TECH_STACK = ["React", "Next.js", "Node.js", "Tailwind CSS", "Supabase", "Python"];
+const WORDS = ["Web Dev Enthusiast", "AI Enthusiast", "Cyber Security Enthusiast"];
+const TECH_STACK = ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Node.js"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/mhmmdragilpy" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/muhmmdragilpy/" },
@@ -182,7 +182,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                  Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                  Belajar mengembangkan Website yang Inovatif, Fungsional, dan User-Friendly sebagai bagian dari perjalanan belajar saya.
                 </p>
 
                 {/* Tech Stack */}

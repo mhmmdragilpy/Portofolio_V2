@@ -1,0 +1,28 @@
+{
+    "title": "AFM Company Profile",
+    "description": "Website profil perusahaan profesional untuk PT Anugrah Firdaus Mandiri yang dirancang untuk menampilkan layanan logistik, galeri proyek, dan kredibilitas bisnis dengan antarmuka modern dan responsif.",
+    "breadcrumb": "Projects > AFM Company Profile",
+    "metrics": {
+        "tech_count": 6,
+        "feature_count": 5
+    },
+    "links": {
+        "demo": "https://afm-companyprofile.vercel.app/",
+        "github": "https://github.com/mhmmdragilpy/AFM-companyprofile"
+    },
+    "technologies": [
+        "HTML5",
+        "CSS3 (Custom Properties)",
+        "Vanilla JavaScript",
+        "Font Awesome 6",
+        "Google Fonts (Outfit & Inter)",
+        "Vercel Deployment"
+    ],
+    "features": [
+        "Responsive Navigation dengan efek Glassmorphism dan Sticky Header",
+        "Galeri Proyek Interaktif dengan fitur Image Lightbox",
+        "Animasi Smooth Scroll Reveal menggunakan Intersection Observer API",
+        "Real-time Animated Statistics Counter untuk data pengalaman klien",
+        "Integrasi Floating WhatsApp Button untuk komunikasi langsung"
+    ]
+}

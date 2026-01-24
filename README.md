@@ -2,11 +2,11 @@
 
 Hello everyone! 👋
 
-Let me introduce myself, I'm **Muhammad Ragil** (aka **RajailDev**). This is my personal portfolio website V2, showcasing my projects, skills, and journey in the tech world.
+Let me introduce myself, I'm **Mang Do-san**. This is my personal portfolio website V2, showcasing my learning projects, skills, and journey in the tech world.
 
 ## 🚀 Live Demo
 
-**Website Link:** [https://www.rajaildev-portofolio.vercel.app/](https://www.rajaildev-portofolio.vercel.app/)
+**Website Link:** [https://mangdosan-portofolio.vercel.app/](https://mangdosan-portofolio.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -97,7 +97,7 @@ A huge shoutout to:
 
 Feel free to reach out!
 
-**Muhammad Ragil (RajailDev)**
+**Mang Do-san**
 - **GitHub:** [mhmmdragilpy](https://github.com/mhmmdragilpy)
 - **Email:** mhmmdragilpy@gmail.com
 

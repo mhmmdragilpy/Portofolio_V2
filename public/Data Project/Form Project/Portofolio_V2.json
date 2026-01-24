@@ -1,0 +1,35 @@
+{
+    "title": "Portofolio V2",
+    "description": "Website portofolio pribadi V2 yang dirancang modern dan interaktif untuk menampilkan proyek, keahlian, dan perjalanan karier, dilengkapi sistem komentar real-time.",
+    "breadcrumb": "Projects > Portofolio V2",
+    "metrics": {
+        "tech_count": 12,
+        "feature_count": 8
+    },
+    "links": {
+        "demo": "https://mangdosan-portofolio.vercel.app/",
+        "repo": "https://github.com/mhmmdragilpy/Portofolio_V2"
+    },
+    "technologies": [
+        "React 18",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Supabase",
+        "Firebase",
+        "GSAP",
+        "SweetAlert2",
+        "Material UI",
+        "Shadcn UI"
+    ],
+    "features": [
+        "Interactive Welcome Screen",
+        "Real-time Comment System (Supabase)",
+        "Comprehensive Project Gallery",
+        "Animated Certificates Showcase",
+        "Responsive Glassmorphism Design",
+        "Scroll Animations (AOS)",
+        "Integrated Contact Form",
+        "Dynamic Tech Stack Visuals"
+    ]
+}

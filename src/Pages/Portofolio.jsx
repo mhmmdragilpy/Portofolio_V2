@@ -102,25 +102,155 @@ function a11yProps(index) {
   };
 }
 
-// techStacks tetap sama
+// Tech Stack - Updated with all unique technologies from project JSON files
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
+  // Core Languages & Markup
+  { icon: "html.svg", language: "HTML5" },
+  { icon: "css.svg", language: "CSS3" },
   { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", language: "TypeScript" },
+  { icon: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000", language: "Python" },
+
+  // Frontend Frameworks & Libraries
+  { icon: "reactjs.svg", language: "React" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", language: "Next.js" },
   { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
+
+  // Styling & UI
+  { icon: "tailwind.svg", language: "Tailwind CSS" },
   { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
   { icon: "MUI.svg", language: "Material UI" },
+  { icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", language: "Shadcn UI" },
+
+  // Animation Libraries
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg", language: "Framer Motion" },
+  { icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg", language: "GSAP" },
+
+  // Backend & Runtime
+  { icon: "nodejs.svg", language: "Node.js" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", language: "Express.js" },
+
+  // Databases
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", language: "PostgreSQL" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", language: "Redis" },
+
+  // BaaS & Cloud
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg", language: "Supabase" },
+  { icon: "firebase.svg", language: "Firebase" },
   { icon: "vercel.svg", language: "Vercel" },
+
+  // State Management
+  { icon: "/Tech Stack Icon/Zustand.webp", language: "Zustand" },
+
+  // Auth
+  { icon: "https://next-auth.js.org/img/logo/logo-sm.png", language: "NextAuth.js" },
+
+  // Tools & Libraries
   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "https://lucide.dev/logo.light.svg", language: "Lucide React" },
+
+  // Networking (Certified)
+  { icon: "/Tech Stack Icon/cisco.webp", language: "CCNA" },
+  { icon: "/Tech Stack Icon/mikrotik-light.webp", language: "Mikrotik" },
+
+  // DevOps & Cloud Infrastructure
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg", language: "Ubuntu" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", language: "Azure" },
+  { icon: "/Tech Stack Icon/cloudflare.webp", language: "Cloudflare" },
+  { icon: "/Tech Stack Icon/coolify.webp", language: "Coolify" },
+
+  // Additional Languages (for showcase)
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", language: "Java" },
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", language: "C++" },
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", language: "TypeScript" },
-  { icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", language: "shadcn UI" },
-  { icon: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000", language: "Python" }, // Using a generic gravity/space icon representation
+];
+
+// Hardcoded project data from JSON files - synced with Data Project folder
+const localProjectsData = [
+  {
+    id: "academyspace",
+    Title: "Academy Space",
+    Description: "Platform manajemen reservasi fasilitas kampus yang modern dan terintegrasi, memungkinkan peminjaman ruangan secara transparan dengan fitur pengecekan ketersediaan real-time.",
+    Img: "/Data Project/Screenshot Live Demo/AcademySpace.jpg",
+    Link: "https://academy-space.vercel.app/",
+    Github: "https://github.com/mhmmdragilpy/AcademySpace",
+    TechStack: ["Next.js 16", "React 19", "TypeScript", "TailwindCSS 4", "PostgreSQL", "Express.js", "TanStack Query", "Zustand", "Redis", "NextAuth.js"],
+    Features: [
+      "Smart Availability Check (Real-time Conflict Detection)",
+      "Secure Authentication (JWT & NextAuth)",
+      "Interactive Booking Calendar",
+      "Comprehensive Admin Dashboard",
+      "Automated Reservation Approval Flow",
+      "Facility Rating & Feedback System"
+    ]
+  },
+  {
+    id: "portofolio-v2",
+    Title: "Portofolio V2",
+    Description: "Website portofolio pribadi V2 yang dirancang modern dan interaktif untuk menampilkan proyek, keahlian, dan perjalanan karier, dilengkapi sistem komentar real-time.",
+    Img: "/Data Project/Screenshot Live Demo/Portofolio_V2.jpg",
+    Link: "https://mangdosan-portofolio.vercel.app/",
+    Github: "https://github.com/mhmmdragilpy/Portofolio_V2",
+    TechStack: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "Supabase", "Firebase", "GSAP", "SweetAlert2", "Material UI", "Shadcn UI"],
+    Features: [
+      "Interactive Welcome Screen",
+      "Real-time Comment System (Supabase)",
+      "Comprehensive Project Gallery",
+      "Animated Certificates Showcase",
+      "Responsive Glassmorphism Design",
+      "Scroll Animations (AOS)",
+      "Integrated Contact Form",
+      "Dynamic Tech Stack Visuals"
+    ]
+  },
+  {
+    id: "afm-companyprofile",
+    Title: "AFM Company Profile",
+    Description: "Website profil perusahaan profesional untuk PT Anugrah Firdaus Mandiri yang dirancang untuk menampilkan layanan logistik, galeri proyek, dan kredibilitas bisnis dengan antarmuka modern dan responsif.",
+    Img: "/Data Project/Screenshot Live Demo/AFM-companyprofile.jpg",
+    Link: "https://afm-companyprofile.vercel.app/",
+    Github: "https://github.com/mhmmdragilpy/AFM-companyprofile",
+    TechStack: ["HTML5", "CSS3 (Custom Properties)", "Vanilla JavaScript", "Font Awesome 6", "Google Fonts (Outfit & Inter)", "Vercel Deployment"],
+    Features: [
+      "Responsive Navigation dengan efek Glassmorphism dan Sticky Header",
+      "Galeri Proyek Interaktif dengan fitur Image Lightbox",
+      "Animasi Smooth Scroll Reveal menggunakan Intersection Observer API",
+      "Real-time Animated Statistics Counter untuk data pengalaman klien",
+      "Integrasi Floating WhatsApp Button untuk komunikasi langsung"
+    ]
+  },
+  {
+    id: "todo-app",
+    Title: "Todo App",
+    Description: "Aplikasi manajemen tugas modern yang responsif dan estetik, dirancang untuk meningkatkan produktivitas dengan fitur pelacakan progres real-time dan penyimpanan data lokal yang persisten.",
+    Img: "/Data Project/Screenshot Live Demo/todo-app.jpg",
+    Link: "https://todo-app-lovat-sigma.vercel.app/",
+    Github: "https://github.com/mhmmdragilpy/todo-app",
+    TechStack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "Lucide React", "Worker Threads", "Local Storage API"],
+    Features: [
+      "Manajemen Tugas Full CRUD (Create, Read, Update, Delete)",
+      "Persistensi Data Lokal (Local Storage)",
+      "Sistem Filtering Tugas (Active/Completed)",
+      "Visualisasi Progres Real-time",
+      "Arsitektur Concurrency Worker Pool",
+      "Desain Responsif dengan Efek Glassmorphism"
+    ]
+  },
+  {
+    id: "whome",
+    Title: "Whome",
+    Description: "Platform manajemen ISP modern yang memfasilitasi pendaftaran pelanggan baru dan pemantauan status instalasi melalui dashboard admin yang intuitif.",
+    Img: "/Data Project/Screenshot Live Demo/whome.jpg",
+    Link: "https://whome-provider.vercel.app",
+    Github: "https://github.com/mhmmdragilpy/whome.git",
+    TechStack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Supabase", "Zustand", "React 19"],
+    Features: [
+      "Sistem Pendaftaran Pelanggan (Leads) Real-time",
+      "Dashboard Admin Interaktif untuk Manajemen Instalasi",
+      "Pelacakan Lokasi & Validasi Input Otomatis",
+      "Manajemen Paket Layanan Internet Dinamis",
+      "State Management Global yang Teroptimasi"
+    ]
+  }
 ];
 
 export default function FullWidthTabs() {
@@ -142,44 +272,45 @@ export default function FullWidthTabs() {
 
   const fetchData = useCallback(async () => {
     try {
-      // Mengambil data dari Supabase secara paralel
-      const [projectsResponse, certificatesResponse] = await Promise.all([
-        supabase.from("projects").select("*").order('id', { ascending: true }),
-        supabase.from("certificates").select("*").order('id', { ascending: true }),
-      ]);
+      // Use localProjectsData as primary source for projects (synced with Data Project folder)
+      // This ensures projects are always in sync with JSON files in the folder
+      setProjects(localProjectsData);
+      localStorage.setItem("projects", JSON.stringify(localProjectsData));
 
-      // Error handling untuk setiap request
-      if (projectsResponse.error) throw projectsResponse.error;
+      // Fetch certificates from Supabase
+      const certificatesResponse = await supabase
+        .from("certificates")
+        .select("*")
+        .order('id', { ascending: true });
+
       if (certificatesResponse.error) throw certificatesResponse.error;
 
-      // Supabase mengembalikan data dalam properti 'data'
-      const projectData = projectsResponse.data || [];
       const certificateData = certificatesResponse.data || [];
-
-      setProjects(projectData);
       setCertificates(certificateData);
-
-      // Store in localStorage (fungsionalitas ini tetap dipertahankan)
-      localStorage.setItem("projects", JSON.stringify(projectData));
       localStorage.setItem("certificates", JSON.stringify(certificateData));
     } catch (error) {
       console.error("Error fetching data from Supabase:", error.message);
+      // Fallback: use cached certificates if available
+      const cachedCertificates = localStorage.getItem('certificates');
+      if (cachedCertificates) {
+        setCertificates(JSON.parse(cachedCertificates));
+      }
     }
   }, []);
 
 
 
   useEffect(() => {
-    // Coba ambil dari localStorage dulu untuk laod lebih cepat
-    const cachedProjects = localStorage.getItem('projects');
-    const cachedCertificates = localStorage.getItem('certificates');
+    // Initialize projects immediately from localProjectsData
+    setProjects(localProjectsData);
 
-    if (cachedProjects && cachedCertificates) {
-      setProjects(JSON.parse(cachedProjects));
+    // Try to load cached certificates for faster initial load
+    const cachedCertificates = localStorage.getItem('certificates');
+    if (cachedCertificates) {
       setCertificates(JSON.parse(cachedCertificates));
     }
 
-    fetchData(); // Tetap panggil fetchData untuk sinkronisasi data terbaru
+    fetchData(); // Fetch latest certificates from Supabase
   }, [fetchData]);
 
   const handleChange = (event, newValue) => {
