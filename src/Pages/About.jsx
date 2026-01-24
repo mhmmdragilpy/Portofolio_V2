@@ -205,7 +205,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Mang Do-san
+                Muhammad Ragil
               </span>
             </h2>
 
