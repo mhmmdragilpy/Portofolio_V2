@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback, memo } from "react"
+import React, { useState, useEffect, useCallback, memo, useRef } from "react"
 import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import { animate } from 'animejs'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -73,6 +73,64 @@ const SocialLink = memo(({ icon: Icon, link }) => (
   </a>
 ));
 
+const AnimatedLogo = memo(({ isHovering }) => {
+  const logoRef = useRef(null);
+
+  useEffect(() => {
+    if (!logoRef.current) return;
+
+    const turbulence = logoRef.current.querySelector('feTurbulence');
+    const displacementMap = logoRef.current.querySelector('feDisplacementMap');
+    const polygon = logoRef.current.querySelector('polygon');
+
+    if (turbulence && displacementMap) {
+      animate([turbulence, displacementMap], {
+        baseFrequency: .05,
+        scale: 15,
+        alternate: true,
+        loop: true,
+        duration: 3000
+      });
+    }
+
+    if (polygon) {
+      animate(polygon, {
+        points: '64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100',
+        alternate: true,
+        loop: true,
+        duration: 3000
+      });
+    }
+  }, []);
+
+  return (
+    <div className={`w-full h-full flex items-center justify-center transition-all duration-500 max-h-[500px] ${isHovering ? 'scale-[1.1]' : 'scale-100'}`}>
+      <svg
+        ref={logoRef}
+        viewBox="0 0 128 128"
+        className="w-full max-w-[300px] md:max-w-[400px] h-auto drop-shadow-[0_0_25px_rgba(99,102,241,0.6)]"
+        style={{ overflow: 'visible' }}
+      >
+        <defs>
+          <filter id="displacementFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+          </filter>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#6366f1" />
+            <stop offset="100%" stopColor="#a855f7" />
+          </linearGradient>
+        </defs>
+        <polygon
+          points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"
+          fill="url(#logoGradient)"
+          filter="url(#displacementFilter)"
+        />
+      </svg>
+    </div>
+  );
+});
+
 // Constants
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
@@ -141,22 +199,6 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [handleTyping]);
 
-  // Lottie configuration
-  const lottieOptions = {
-    src: "https://lottie.host/4953c6ff-f8b0-45cd-b667-baf472bba2ae/EHnn08K4mW.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: true,
-    },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${isHovering
-      ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2"
-      : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
-      }`
-  };
-
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] " id="Home">
       <div className={`relative z-10 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
@@ -207,7 +249,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Optimized Lottie Animation */}
+            {/* Right Column - Animated Logo */}
             <div className="w-full py-[10%] sm:py-0 lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
@@ -218,9 +260,9 @@ const Home = () => {
                   }`}>
                 </div>
 
-                <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${isHovering ? "scale-105" : "scale-100"
+                <div className={`relative z-10 w-full opacity-90 transform transition-transform duration-500 ${isHovering ? "scale-105" : "scale-100"
                   }`}>
-                  <DotLottieReact {...lottieOptions} />
+                  <AnimatedLogo isHovering={isHovering} />
                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${isHovering ? "opacity-50" : "opacity-20"
