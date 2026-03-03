@@ -386,8 +386,8 @@ export default function FullWidthTabs() {
   const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
 
   // Create separated displays for rendering
-  const displayedHardSkills = showAllHardSkills ? hardSkillCertificates : hardSkillCertificates.slice(0, initialItems);
-  const displayedSoftSkills = showAllSoftSkills ? softSkillCertificates : softSkillCertificates.slice(0, initialItems);
+  const displayedHardSkills = hardSkillCertificates;
+  const displayedSoftSkills = softSkillCertificates;
 
   // Sisa dari komponen (return statement) tidak ada perubahan
   return (
@@ -551,14 +551,6 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
-              {hardSkillCertificates.length > initialItems && (
-                <div className="mt-6 w-full flex justify-start">
-                  <ToggleButton
-                    onClick={() => toggleShowMore('hardSkills')}
-                    isShowingMore={showAllHardSkills}
-                  />
-                </div>
-              )}
             </div>
 
             {/* Soft Skills Section */}
@@ -578,14 +570,6 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
-              {softSkillCertificates.length > initialItems && (
-                <div className="mt-6 w-full flex justify-start">
-                  <ToggleButton
-                    onClick={() => toggleShowMore('softSkills')}
-                    isShowingMore={showAllSoftSkills}
-                  />
-                </div>
-              )}
             </div>
           </TabPanel>
 
