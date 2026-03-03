@@ -14,11 +14,12 @@ const Certificate = ({ ImgSertif }) => {
 		setOpen(false)
 	}
 
+	const isPdf = ImgSertif.toLowerCase().endsWith('.pdf');
+
 	return (
 		<Box component="div" sx={{ width: "100%" }}>
 			{/* Thumbnail Container */}
 			<Box
-				className=""
 				sx={{
 					position: "relative",
 					overflow: "hidden",
@@ -40,7 +41,7 @@ const Certificate = ({ ImgSertif }) => {
 						},
 					},
 				}}>
-				{/* Certificate Image with Initial Filter */}
+				{/* Certificate Image/PDF Placeholder with Initial Filter */}
 				<Box
 					sx={{
 						position: "relative",
@@ -53,22 +54,48 @@ const Certificate = ({ ImgSertif }) => {
 							bottom: 0,
 							backgroundColor: "rgba(0, 0, 0, 0.1)",
 							zIndex: 1,
+							pointerEvents: "none",
 						},
 					}}>
-					<img
-						className="certificate-image"
-						src={ImgSertif}
-						alt="Certificate"
-						style={{
+					{isPdf ? (
+						<Box sx={{
 							width: "100%",
-							height: "auto",
-							display: "block",
-							objectFit: "cover",
-							filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
-							transition: "filter 0.3s ease",
-						}}
-						onClick={handleOpen}
-					/>
+							height: "220px",
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							justifyContent: "center",
+							backgroundColor: "#1e1e2f",
+							color: "white",
+							cursor: "pointer"
+						}} onClick={handleOpen}>
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-red-400 mb-2">
+								<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+								<polyline points="14 2 14 8 20 8"></polyline>
+								<text x="9" y="16" fontSize="6" fontWeight="bold" fill="currentColor" stroke="none">PDF</text>
+							</svg>
+							<Typography variant="body2" sx={{ px: 2, textAlign: "center", wordBreak: "break-word", color: "#a1a1aa" }}>
+								{ImgSertif.split('/').pop().replace(/_/g, ' ')}
+							</Typography>
+						</Box>
+					) : (
+						<img
+							className="certificate-image"
+							src={ImgSertif}
+							alt="Certificate"
+							loading="lazy"
+							style={{
+								width: "100%",
+								height: "220px",
+								display: "block",
+								objectFit: "cover",
+								filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
+								transition: "filter 0.3s ease",
+								cursor: "pointer",
+							}}
+							onClick={handleOpen}
+						/>
+					)}
 				</Box>
 
 				{/* Hover Overlay */}
@@ -176,18 +203,43 @@ const Certificate = ({ ImgSertif }) => {
 						<CloseIcon sx={{ fontSize: 24 }} />
 					</IconButton>
 
-					{/* Modal Image */}
-					<img
-						src={ImgSertif}
-						alt="Certificate Full View"
-						style={{
-							display: "block",
-							maxWidth: "100%",
-							maxHeight: "90vh",
-							margin: "0 auto",
-							objectFit: "contain",
-						}}
-					/>
+					{/* Modal Content */}
+					<Box sx={{
+						width: "100%",
+						height: "100%",
+						minWidth: { xs: "90vw", sm: "600px", md: "800px" },
+						minHeight: { xs: "80vh", md: "80vh" },
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						bgcolor: isPdf ? "white" : "transparent"
+					}}>
+						{isPdf ? (
+							<iframe
+								src={ImgSertif}
+								title="PDF Certificate"
+								style={{
+									width: "100%",
+									height: "80vh",
+									border: "none",
+								}}
+								loading="lazy"
+							/>
+						) : (
+							<img
+								src={ImgSertif}
+								alt="Certificate Full View"
+								loading="lazy"
+								style={{
+									display: "block",
+									maxWidth: "100%",
+									maxHeight: "90vh",
+									margin: "0 auto",
+									objectFit: "contain",
+								}}
+							/>
+						)}
+					</Box>
 				</Box>
 			</Modal>
 		</Box>

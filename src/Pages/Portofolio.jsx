@@ -111,57 +111,27 @@ const techStacks = [
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", language: "TypeScript" },
   { icon: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000", language: "Python" },
 
-  // Frontend Frameworks & Libraries
+  // Frontend Frameworks & UI
   { icon: "reactjs.svg", language: "React" },
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", language: "Next.js" },
   { icon: "vite.svg", language: "Vite" },
-
-  // Styling & UI
   { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "MUI.svg", language: "Material UI" },
   { icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", language: "Shadcn UI" },
 
-  // Animation Libraries
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg", language: "Framer Motion" },
-  { icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg", language: "GSAP" },
-
-  // Backend & Runtime
+  // Backend & Databases
   { icon: "nodejs.svg", language: "Node.js" },
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", language: "Express.js" },
-
-  // Databases
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", language: "PostgreSQL" },
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", language: "Redis" },
-
-  // BaaS & Cloud
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg", language: "Supabase" },
-  { icon: "firebase.svg", language: "Firebase" },
+
+  // Cloud & DevOps 
   { icon: "vercel.svg", language: "Vercel" },
-
-  // State Management
-  { icon: "/Tech Stack Icon/Zustand.webp", language: "Zustand" },
-
-  // Auth
-  { icon: "https://next-auth.js.org/img/logo/logo-sm.png", language: "NextAuth.js" },
-
-  // Tools & Libraries
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
-  { icon: "https://lucide.dev/logo.light.svg", language: "Lucide React" },
-
-  // Networking (Certified)
-  { icon: "/Tech Stack Icon/cisco.webp", language: "CCNA" },
-  { icon: "/Tech Stack Icon/mikrotik-light.webp", language: "Mikrotik" },
-
-  // DevOps & Cloud Infrastructure
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg", language: "Ubuntu" },
   { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", language: "Azure" },
-  { icon: "/Tech Stack Icon/cloudflare.webp", language: "Cloudflare" },
   { icon: "/Tech Stack Icon/coolify.webp", language: "Coolify" },
 
-  // Additional Languages (for showcase)
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", language: "Java" },
-  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", language: "C++" },
+  // Networking Infrastructure
+  { icon: "/Tech Stack Icon/cisco.webp", language: "CCNA" },
+  { icon: "/Tech Stack Icon/mikrotik-light.webp", language: "Mikrotik" },
 ];
 
 // Hardcoded project data from JSON files - synced with Data Project folder
@@ -250,8 +220,104 @@ const localProjectsData = [
       "Manajemen Paket Layanan Internet Dinamis",
       "State Management Global yang Teroptimasi"
     ]
+  },
+  {
+    id: "smart-trucking",
+    Title: "Smart Trucking Invoice System",
+    Description: "Platform manajemen invoice logistik modern untuk mendigitalkan alur kerja penagihan, kalkulasi biaya otomatis, hingga pembuatan dokumen PDF profesional.",
+    Img: "/Data Project/Screenshot Live Demo/smart-trucking-invoice-system.jpg",
+    Link: "https://smart-trucking-invoice-system-[placeholder].vercel.app",
+    Github: "https://github.com/mhmmdragilpy/Smart-Trucking-Invoice-System.git",
+    TechStack: ["Next.js 16.1", "React 19", "Supabase", "Drizzle ORM", "Tailwind CSS 4", "TypeScript"],
+    Features: [
+      "Manajemen Invoice (16+ Tipe)",
+      "Kalkulasi Cerdas & Otomatis",
+      "PDF Generator",
+      "Dashboard & Rekapitulasi",
+      "Autentikasi & Keamanan"
+    ]
+  },
+  {
+    id: "p8net",
+    Title: "P8 NET - Modern ISP Management",
+    Description: "Platform manajemen layanan penyedia internet (ISP) modern dan responsif untuk memudahkan pengelolaan paket layanan dan pemantauan status instalasi.",
+    Img: "/Data Project/Screenshot Live Demo/p8net-provider.jpg",
+    Link: "https://p8net-provider.vercel.app/",
+    Github: "https://github.com/mhmmdragilpy/p8net-provider.git",
+    TechStack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Zustand", "Supabase", "Lucide React"],
+    Features: [
+      "Sistem Pendaftaran (Leads)",
+      "Admin Dashboard Interaktif",
+      "Manajemen Paket Internet",
+      "Statistik Ringkas Performa",
+      "Notifikasi Terintegrasi WhatsApp"
+    ]
+  },
+  {
+    id: "madun-net",
+    Title: "MADUN NET - ISP Landing Page",
+    Description: "Website landing page modern untuk penyedia layanan internet (ISP) yang informatif dan premium, terintegrasi langsung dengan WhatsApp Admin.",
+    Img: "/Data Project/Screenshot Live Demo/madun-net-provider.jpg",
+    Link: "https://madun-net-provider.vercel.app",
+    Github: "https://github.com/mhmmdragilpy/madun-net-provider.git",
+    TechStack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Zustand"],
+    Features: [
+      "Landing Page Modern & Responsive",
+      "Formulir Pendaftaran via WhatsApp",
+      "Daftar Paket Internet Lengkap",
+      "Static Export Support",
+      "Validasi Input Pengguna"
+    ]
+  },
+  {
+    id: "whome-v2",
+    Title: "Whome Management System v2",
+    Description: "ISP management dashboard built for handling billing, tracking customers, and seamless WhatsApp-based notifications dengan backend serverless.",
+    Img: "/Data Project/Screenshot Live Demo/whome-management-system.jpg",
+    Link: "https://whome-management-system-[placeholder].vercel.app",
+    Github: "https://github.com/mhmmdragilpy/whome-management-system.git",
+    TechStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Shadcn UI", "Google Sheets API", "Apps Script"],
+    Features: [
+      "Dashboard Overview Statistik",
+      "Customer Management Lengkap",
+      "Automated Billing Workflow",
+      "WhatsApp Integration (No PDF needed)",
+      "GAS REST API Security Check"
+    ]
   }
 ];
+
+// Hardcoded Certificates Data
+const hardSkillCertificates = [
+  { id: "h1", Img: "/Certificates/Sertifikat HardSkill/Sertifikat Alibaba CLoud.jpg" },
+  { id: "h2", Img: "/Certificates/Sertifikat HardSkill/Sertifikat FINALIS CTF Adikara 2024.jpg" },
+  { id: "h3", Img: "/Certificates/Sertifikat HardSkill/idcamp-x-dicoding-live-5-ai-web-dev-build-real-apps-with-lovable-antigravity-certificate_page-0001.jpg" },
+  { id: "h4", Img: "/Certificates/Sertifikat HardSkill/devcoach-226-n8n-cara-mudah-install-n8n-di-aws-cloud-via-easypanel-gratis-1-tahun-certificate_page-0001.jpg" },
+  { id: "h5", Img: "/Certificates/Sertifikat HardSkill/devcoach-227-spotlight-unlock-potensi-cuan-lewat-pengembangan-product-certificate_page-0001.jpg" },
+  { id: "h6", Img: "/Certificates/Sertifikat HardSkill/Sertifikat CySec_page-0001.jpg" },
+  { id: "h7", Img: "/Certificates/Sertifikat HardSkill/Sertifikat MTCNA.jpg" },
+  { id: "h8", Img: "/Certificates/Sertifikat HardSkill/Sertifikat BNSP TKJ.jpg" },
+  { id: "h9", Img: "/Certificates/Sertifikat HardSkill/Sertifikat P2KPTK2 TKJ.jpg" },
+  { id: "h10", Img: "/Certificates/Sertifikat HardSkill/Sertifikat Trainning CCNA.jpg" },
+  { id: "h11", Img: "/Certificates/Sertifikat HardSkill/Sertifikat PKL Hipernet Indodata.jpg" },
+  { id: "h12", Img: "/Certificates/Sertifikat HardSkill/Sertifikat Partisipan LKS SMK TKJ.jpg" }
+];
+
+const softSkillCertificates = [
+  { id: "s1", Img: "/Certificates/Sertifikat SoftSkill/SERTIFIKAT_TEL-U_CAREER_COACH_-_ENTREPRENEURSHIP_page-0001.jpg" },
+  { id: "s2", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Anti_Korupsi.jpg" },
+  { id: "s3", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Anti_Napza.jpg" },
+  { id: "s4", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Anti_Radikalisme.jpg" },
+  { id: "s5", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Green_Campus.jpg" },
+  { id: "s6", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Leadership.jpg" },
+  { id: "s7", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_MBTI.jpg" },
+  { id: "s8", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Relationship_Management.jpg" },
+  { id: "s9", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Self_Management_page-0001.jpg" },
+  { id: "s10", Img: "/Certificates/Sertifikat SoftSkill/Sertifikat_Technopreneurship_page-0001.jpg" },
+  { id: "s11", Img: "/Certificates/Sertifikat SoftSkill/2493bac0-ad44-41e2-a241-9c20c99c9f7a-0.jpg" },
+  { id: "s12", Img: "/Certificates/Sertifikat SoftSkill/8b156bd4-ddae-4d7a-8be2-33433b2db074-0.jpg" },
+];
+
 
 export default function FullWidthTabs() {
   const theme = useTheme();
@@ -259,7 +325,8 @@ export default function FullWidthTabs() {
   const [projects, setProjects] = useState([]);
   const [certificates, setCertificates] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
-  const [showAllCertificates, setShowAllCertificates] = useState(false);
+  const [showAllHardSkills, setShowAllHardSkills] = useState(false);
+  const [showAllSoftSkills, setShowAllSoftSkills] = useState(false);
   const isMobile = window.innerWidth < 768;
   const initialItems = isMobile ? 4 : 6;
 
@@ -272,29 +339,18 @@ export default function FullWidthTabs() {
 
   const fetchData = useCallback(async () => {
     try {
-      // Use localProjectsData as primary source for projects (synced with Data Project folder)
-      // This ensures projects are always in sync with JSON files in the folder
       setProjects(localProjectsData);
       localStorage.setItem("projects", JSON.stringify(localProjectsData));
 
-      // Fetch certificates from Supabase
-      const certificatesResponse = await supabase
-        .from("certificates")
-        .select("*")
-        .order('id', { ascending: true });
-
-      if (certificatesResponse.error) throw certificatesResponse.error;
-
-      const certificateData = certificatesResponse.data || [];
-      setCertificates(certificateData);
-      localStorage.setItem("certificates", JSON.stringify(certificateData));
+      // Use local static certificates instead of Supabase
+      // Assuming user wants them separated but previously was a single array, 
+      // here we merge them for the main certificates tab but we will split them in UI rendering later.
+      // Wait, let's keep them combined in 'certificates' state for backward compatibility with total count in About.jsx
+      const allCertificates = [...hardSkillCertificates, ...softSkillCertificates];
+      setCertificates(allCertificates);
+      localStorage.setItem("certificates", JSON.stringify(allCertificates));
     } catch (error) {
-      console.error("Error fetching data from Supabase:", error.message);
-      // Fallback: use cached certificates if available
-      const cachedCertificates = localStorage.getItem('certificates');
-      if (cachedCertificates) {
-        setCertificates(JSON.parse(cachedCertificates));
-      }
+      console.error("Error fetching data:", error.message);
     }
   }, []);
 
@@ -310,7 +366,7 @@ export default function FullWidthTabs() {
       setCertificates(JSON.parse(cachedCertificates));
     }
 
-    fetchData(); // Fetch latest certificates from Supabase
+    fetchData(); // Fetch latest certificates 
   }, [fetchData]);
 
   const handleChange = (event, newValue) => {
@@ -320,13 +376,18 @@ export default function FullWidthTabs() {
   const toggleShowMore = useCallback((type) => {
     if (type === 'projects') {
       setShowAllProjects(prev => !prev);
-    } else {
-      setShowAllCertificates(prev => !prev);
+    } else if (type === 'hardSkills') {
+      setShowAllHardSkills(prev => !prev);
+    } else if (type === 'softSkills') {
+      setShowAllSoftSkills(prev => !prev);
     }
   }, []);
 
   const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
-  const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
+
+  // Create separated displays for rendering
+  const displayedHardSkills = showAllHardSkills ? hardSkillCertificates : hardSkillCertificates.slice(0, initialItems);
+  const displayedSoftSkills = showAllSoftSkills ? softSkillCertificates : softSkillCertificates.slice(0, initialItems);
 
   // Sisa dari komponen (return statement) tidak ada perubahan
   return (
@@ -473,9 +534,14 @@ export default function FullWidthTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={1} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden">
+            {/* Hard Skills Section */}
+            <div className="container mx-auto pb-8">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2" data-aos="fade-right">
+                <span className="w-8 h-[2px] bg-indigo-500"></span>
+                Hard Skills
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
-                {displayedCertificates.map((certificate, index) => (
+                {displayedHardSkills.map((certificate, index) => (
                   <div
                     key={certificate.id || index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
@@ -485,15 +551,42 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
+              {hardSkillCertificates.length > initialItems && (
+                <div className="mt-6 w-full flex justify-start">
+                  <ToggleButton
+                    onClick={() => toggleShowMore('hardSkills')}
+                    isShowingMore={showAllHardSkills}
+                  />
+                </div>
+              )}
             </div>
-            {certificates.length > initialItems && (
-              <div className="mt-6 w-full flex justify-start">
-                <ToggleButton
-                  onClick={() => toggleShowMore('certificates')}
-                  isShowingMore={showAllCertificates}
-                />
+
+            {/* Soft Skills Section */}
+            <div className="container mx-auto mt-10">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2" data-aos="fade-right">
+                <span className="w-8 h-[2px] bg-purple-500"></span>
+                Soft Skills
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
+                {displayedSoftSkills.map((certificate, index) => (
+                  <div
+                    key={certificate.id || index}
+                    data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
+                    data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
+                  >
+                    <Certificate ImgSertif={certificate.Img} />
+                  </div>
+                ))}
               </div>
-            )}
+              {softSkillCertificates.length > initialItems && (
+                <div className="mt-6 w-full flex justify-start">
+                  <ToggleButton
+                    onClick={() => toggleShowMore('softSkills')}
+                    isShowingMore={showAllSoftSkills}
+                  />
+                </div>
+              )}
+            </div>
           </TabPanel>
 
           <TabPanel value={value} index={2} dir={theme.direction}>

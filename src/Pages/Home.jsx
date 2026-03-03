@@ -77,8 +77,8 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web Dev Enthusiast", "AI Enthusiast", "Cyber Security Enthusiast"];
-const TECH_STACK = ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Node.js"];
+const WORDS = ["Software Engineer", "AI Enthusiast", "Network Engineer"];
+const TECH_STACK = ["JavaScript", "TypeScript", "Python", "React", "Next.js", "Node.js", "PostgreSQL", "MikroTik"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/mhmmdragilpy" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/muhmmdragilpy/" },
@@ -182,7 +182,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                  Belajar mengembangkan Website yang Inovatif, Fungsional, dan User-Friendly sebagai bagian dari perjalanan belajar saya.
+                  Membangun aplikasi web yang inovatif, fungsional, dan user-friendly dengan memadukan teknologi terkini untuk menciptakan solusi digital yang berdampak nyata.
                 </p>
 
                 {/* Tech Stack */}

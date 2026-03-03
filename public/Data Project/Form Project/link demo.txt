@@ -1,0 +1,21 @@
+link demo dan github:
+
+todo-app	todo-app-lovat-sigma.vercel.app
+smart-trucking-invoice-system	smart-trucking-invoice-system-t...
+whome-net-provider	whome-provider.vercel.app
+afm-companyprofile	anugrahfirdausmandiri.vercel.app
+portofolio	mangdosan.vercel.app
+p8net-provider	p8net-provider.vercel.app
+whome-management-system	whome-management-system-ver...
+madun-net-provider	madun-net-provider.vercel.app
+academy-space	academy-space.vercel.app
+
+https://github.com/mhmmdragilpy/whome-management-system.git
+https://github.com/mhmmdragilpy/p8net-provider.git
+https://github.com/mhmmdragilpy/madun-net-provider.git
+https://github.com/mhmmdragilpy/Smart-Trucking-Invoice-System.git
+https://github.com/mhmmdragilpy/afm-companyprofile.git 
+https://github.com/mhmmdragilpy/todo-app.git
+https://github.com/mhmmdragilpy/Portofolio_V2.git
+https://github.com/mhmmdragilpy/AcademySpace.git
+https://github.com/mhmmdragilpy/whome-provider.git

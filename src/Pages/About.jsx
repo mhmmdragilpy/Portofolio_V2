@@ -214,7 +214,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya adalah mahasiswa S1 Informatika yang memiliki ketertarikan tinggi di dunia teknologi. Saat ini sedang aktif belajar dan mengeksplorasi berbagai bidang seperti Web Development, Artificial Intelligence, dan Cyber Security. Saya percaya bahwa proses belajar adalah perjalanan tanpa akhir, dan saya selalu antusias untuk mengembangkan skill baru melalui proyek-proyek dan pembelajaran mandiri.
+              Mahasiswa S1 Informatika semester 6 yang berdedikasi sebagai Software Engineer dan AI Enthusiast dalam pengembangan aplikasi web dengan integrasi AI. Mengombinasikan pemrograman dan pemecahan masalah teknis untuk menghasilkan inovasi digital yang efektif serta berdampak. Berpengalaman memimpin organisasi, kolaboratif secara profesional, dan adaptif di lingkungan kerja yang kompetitif. Fokus berkontribusi melalui pemanfaatan teknologi terkini untuk memberikan solusi nyata bagi tantangan industri dan sosial.
             </p>
 
             {/* Quote Section */}
