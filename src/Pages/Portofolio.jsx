@@ -158,7 +158,7 @@ const localProjectsData = [
     Title: "Portofolio V2",
     Description: "Website portofolio pribadi V2 yang dirancang modern dan interaktif untuk menampilkan proyek, keahlian, dan perjalanan karier, dilengkapi sistem komentar real-time.",
     Img: "/Data Project/Screenshot Live Demo/Portofolio_V2.jpg",
-    Link: "https://mangdosan-portofolio.vercel.app/",
+    Link: "https://mangdosan.vercel.app/",
     Github: "https://github.com/mhmmdragilpy/Portofolio_V2",
     TechStack: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "Supabase", "Firebase", "GSAP", "SweetAlert2", "Material UI", "Shadcn UI"],
     Features: [
@@ -177,7 +177,7 @@ const localProjectsData = [
     Title: "AFM Company Profile",
     Description: "Website profil perusahaan profesional untuk PT Anugrah Firdaus Mandiri yang dirancang untuk menampilkan layanan logistik, galeri proyek, dan kredibilitas bisnis dengan antarmuka modern dan responsif.",
     Img: "/Data Project/Screenshot Live Demo/AFM-companyprofile.jpg",
-    Link: "https://afm-companyprofile.vercel.app/",
+    Link: "https://anugrahfirdausmandiri.vercel.app/",
     Github: "https://github.com/mhmmdragilpy/AFM-companyprofile",
     TechStack: ["HTML5", "CSS3 (Custom Properties)", "Vanilla JavaScript", "Font Awesome 6", "Google Fonts (Outfit & Inter)", "Vercel Deployment"],
     Features: [
@@ -226,7 +226,7 @@ const localProjectsData = [
     Title: "Smart Trucking Invoice System",
     Description: "Platform manajemen invoice logistik modern untuk mendigitalkan alur kerja penagihan, kalkulasi biaya otomatis, hingga pembuatan dokumen PDF profesional.",
     Img: "/Data Project/Screenshot Live Demo/smart-trucking-invoice-system.jpg",
-    Link: "https://smart-trucking-invoice-system-[placeholder].vercel.app",
+    Link: "https://smart-trucking-invoice-system-tml.vercel.app",
     Github: "https://github.com/mhmmdragilpy/Smart-Trucking-Invoice-System.git",
     TechStack: ["Next.js 16.1", "React 19", "Supabase", "Drizzle ORM", "Tailwind CSS 4", "TypeScript"],
     Features: [
@@ -274,7 +274,7 @@ const localProjectsData = [
     Title: "Whome Management System v2",
     Description: "ISP management dashboard built for handling billing, tracking customers, and seamless WhatsApp-based notifications dengan backend serverless.",
     Img: "/Data Project/Screenshot Live Demo/whome-management-system.jpg",
-    Link: "https://whome-management-system-[placeholder].vercel.app",
+    Link: "https://whome-management-system.vercel.app",
     Github: "https://github.com/mhmmdragilpy/whome-management-system.git",
     TechStack: ["Next.js 16", "TypeScript", "Tailwind CSS", "Shadcn UI", "Google Sheets API", "Apps Script"],
     Features: [
