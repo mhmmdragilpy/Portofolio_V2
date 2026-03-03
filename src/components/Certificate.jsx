@@ -84,12 +84,15 @@ const Certificate = ({ ImgSertif }) => {
 							src={ImgSertif}
 							alt="Certificate"
 							loading="lazy"
+							decoding="async"
 							style={{
 								width: "100%",
 								height: "220px",
 								display: "block",
 								objectFit: "cover",
 								filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
+								transform: "translateZ(0)",
+								willChange: "filter, transform",
 								transition: "filter 0.3s ease",
 								cursor: "pointer",
 							}}
@@ -230,12 +233,14 @@ const Certificate = ({ ImgSertif }) => {
 								src={ImgSertif}
 								alt="Certificate Full View"
 								loading="lazy"
+								decoding="async"
 								style={{
 									display: "block",
 									maxWidth: "100%",
 									maxHeight: "90vh",
 									margin: "0 auto",
 									objectFit: "contain",
+									transform: "translateZ(0)",
 								}}
 							/>
 						)}
